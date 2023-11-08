@@ -18,4 +18,6 @@ services:
     environment:
       - FLASK_APP=app.py
       - FLASK_ENV=development
-    command: flask run --host=0.0.0.0
+    # hot reload
+    # command: flask run --host=0.0.0.0
+    command: flask run --host=0.0.0.0 --reload
